@@ -1,7 +1,8 @@
 # Recipes
 
 - Vue Recipes.
-- -Try App [Darko Vue Recipes]((https://darko-vue-recepies.netlify.app/))
+- -Try App [Darko Vue Recipes](https://darko-vue-recepies.netlify.app/)
+- 
 
 -The app use [json server](https://dummyjson.com/).
 
