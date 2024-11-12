@@ -2,8 +2,6 @@
 
 - Vue Recipes.
 - -Try App [Darko Vue Recipes](https://darko-vue-recepies.netlify.app/)
-- 
-
 -The app use [json server](https://dummyjson.com/).
 
 ![image](https://i.ibb.co/41RTGyD/image-2024-11-12-T13-36-26-427-Z.png)
