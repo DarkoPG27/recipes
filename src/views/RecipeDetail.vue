@@ -171,8 +171,12 @@ recipeStore.getOneRecipe(route.params.id);
 
   width: 100%;
   height: 100%;
-  min-height: calc(100vh - 69px);
+  min-height: calc(100vh - 85px);
   background-color: #faedda79;
+  padding-top: 2rem;
+  height: calc(100vh - 230px);
+  overflow-x: hidden;
+  overflow-y: auto;
   /*  background-image: linear-gradient(
       rgba(82, 80, 80, 0.3),
       rgba(255, 255, 255, 0.8)

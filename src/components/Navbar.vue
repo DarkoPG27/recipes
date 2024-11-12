@@ -1,6 +1,10 @@
 <template>
   <nav class="navbar navbar-expand-lg">
-    <RouterLink to="/"><div class="navbar-brand">All Recepies</div></RouterLink>
+    <RouterLink to="/" @click="active = ''"
+      ><div class="navbar-brand" :class="{ routeActive: active === '' }">
+        All Recepies
+      </div></RouterLink
+    >
     <button
       class="navbar-toggler"
       type="button"
@@ -17,24 +21,44 @@
     >
       <b class="popular">POPULAR:</b>
       <ul class="navbar-nav">
-        <RouterLink to="/cuisine/italian"
-          ><div class="nav_item">Italian</div></RouterLink
+        <RouterLink to="/cuisine/italian" @click="active = 'italian'"
+          ><div class="nav_item" :class="{ routeActive: active === 'italian' }">
+            Italian
+          </div></RouterLink
         >
-        <RouterLink to="/cuisine/asian"
-          ><div class="nav_item">Asian</div></RouterLink
+        <RouterLink to="/cuisine/asian" @click="active = 'asian'"
+          ><div :class="{ routeActive: active === 'asian' }" class="nav_item">
+            Asian
+          </div></RouterLink
         >
-        <RouterLink to="/cuisine/american"
-          ><div class="nav_item">American</div></RouterLink
+        <RouterLink to="/cuisine/american" @click="active = 'american'"
+          ><div
+            class="nav_item"
+            :class="{ routeActive: active === 'american' }"
+          >
+            American
+          </div></RouterLink
         >
-        <RouterLink to="/cuisine/mexican"
-          ><div class="nav_item">Mexican</div></RouterLink
+        <RouterLink to="/cuisine/mexican" @click="active = 'mexican'"
+          ><div class="nav_item" :class="{ routeActive: active === 'mexican' }">
+            Mexican
+          </div></RouterLink
         >
-        <RouterLink to="/cuisine/mediterranean"
-          ><div class="nav_item">Mediterranean</div></RouterLink
+        <RouterLink
+          to="/cuisine/mediterranean"
+          @click="active = 'mediterranean'"
+          ><div
+            class="nav_item"
+            :class="{ routeActive: active === 'mediterranean' }"
+          >
+            Mediterranean
+          </div></RouterLink
         >
 
-        <RouterLink to="/cuisine/greek"
-          ><div class="nav_item">Greek</div></RouterLink
+        <RouterLink to="/cuisine/greek" @click="active = 'greek'"
+          ><div class="nav_item" :class="{ routeActive: active === 'greek' }">
+            Greek
+          </div></RouterLink
         >
       </ul>
     </div>
@@ -48,13 +72,19 @@ import { ref } from "vue";
 
 const openMenu = ref(false);
 
+const active = ref("");
+
 const toggleMenu = () => {
   openMenu.value = !openMenu.value;
 };
 </script>
 
 <style>
-navbar {
+.routeActive {
+  background-color: #ffd859 !important;
+}
+
+.navbar {
   height: 30%;
   display: flex;
   justify-content: space-between !important;

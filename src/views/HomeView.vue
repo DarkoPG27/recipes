@@ -29,7 +29,7 @@ recipeStore.getAllRecipes();
 .homeContainer {
   width: 100%;
   height: 100%;
-  min-height: calc(100vh - 118px);
+  min-height: calc(100vh - 133px);
   display: flex;
   justify-content: center;
   align-items: start;
