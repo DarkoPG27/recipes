@@ -152,10 +152,44 @@ const props = defineProps({
 
 @media only screen and (max-width: 532px) {
   .recipeCard {
+    height: 180px;
+    width: 180px;
+  }
+
+  .card_title {
+    font-size: 13px;
+  }
+
+  .card_text {
+    font-size: 11px;
+  }
+
+  .imageContainer img {
+    max-width: 120px;
+  }
+}
+
+@media only screen and (max-width: 482px) {
+  .recipeCard {
     border-radius: 1rem;
-    height: 150px;
-    width: 150px;
+    height: 170px;
+    width: 170px;
     margin: 0.6rem 0.4rem;
+  }
+
+  .card_title {
+    font-size: 12px;
+  }
+
+  .card_text {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-width: 457px) {
+  .recipeCard {
+    height: 170px;
+    width: 150px;
   }
 
   .card_title {
@@ -167,16 +201,14 @@ const props = defineProps({
   }
 
   .imageContainer img {
-    max-width: 100px;
+    max-width: 120px;
   }
 }
 
 @media only screen and (max-width: 406px) {
   .recipeCard {
-    border-radius: 1rem;
-    height: 130px;
-    width: 100px;
-    margin: 0.6rem 0.4rem;
+    height: 160px;
+    width: 140px;
   }
 
   .card_title {
@@ -184,21 +216,32 @@ const props = defineProps({
     word-break: keep-all;
   }
 
-  .card_text {
-    display: none;
+  .imageContainer img {
+    max-width: 110px;
   }
+}
 
+@media only screen and (max-width: 382px) {
+  .recipeCard {
+    height: 160px;
+    width: 130px;
+  }
+}
+
+@media only screen and (max-width: 332px) {
+  .recipeCard {
+    height: 160px;
+    width: 110px;
+  }
   .imageContainer img {
     max-width: 100px;
-    border-radius: 1rem;
   }
+}
 
-  .card_middle {
-    height: 30%;
-  }
-
-  .card_bottom {
-    display: none;
+@media only screen and (max-width: 307px) {
+  .recipeCard {
+    height: 160px;
+    width: 100px;
   }
 }
 
