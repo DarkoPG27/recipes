@@ -317,11 +317,11 @@ recipeStore.getOneRecipe(route.params.id);
   }
 }
 
-@media only screen and (max-width: 614px) {
+/* @media only screen and (max-width: 614px) {
   .recipe_container > div {
     flex-basis: 80%;
   }
-}
+} */
 
 @media only screen and (max-width: 390px) {
   .recipeTitle {

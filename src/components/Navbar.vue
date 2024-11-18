@@ -94,6 +94,10 @@ const toggleMenu = () => {
   /*   background-color: #e4e4e4; */
 }
 
+.navbar-brand {
+  padding: 0rem 1rem;
+}
+
 .navbar-collapse {
   justify-content: flex-end;
   transition: all 0.3s ease-in-out !important;
@@ -111,9 +115,10 @@ const toggleMenu = () => {
 }
 
 .nav_item {
-  padding: 0.2rem 0.4rem;
+  padding: 0.2rem 0.6rem;
   border: 1px solid #e4e4e4;
   transition: all 0.3s ease-in-out;
+  border-radius: 10px;
 }
 
 .navbar-nav {

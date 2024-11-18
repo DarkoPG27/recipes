@@ -99,6 +99,10 @@ recipeStore.getAllRecipes();
     justify-content: center;
   }
 
+  .titleOfPage {
+    font-size: 1.5rem;
+  }
+
   .recipe_container > div {
     flex-basis: 50%;
   }
@@ -107,6 +111,9 @@ recipeStore.getAllRecipes();
 @media only screen and (max-width: 614px) {
   .recipe_container > div {
     flex-basis: 80%;
+  }
+  .titleOfPage {
+    font-size: 1.2rem;
   }
 }
 </style>

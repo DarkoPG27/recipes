@@ -105,4 +105,133 @@ const props = defineProps({
   max-width: 165px;
   border-radius: 50%;
 }
+
+@media only screen and (max-width: 657px) {
+  .recipeCard {
+    border-radius: 1rem;
+    height: 200px;
+    width: 200px;
+    margin: 0.6rem 0.4rem;
+  }
+
+  .card_title {
+    font-size: 14px;
+  }
+
+  .card_text {
+    font-size: 13px;
+  }
+
+  .imageContainer img {
+    max-width: 130px;
+    border-radius: 50%;
+  }
+}
+
+@media only screen and (max-width: 657px) {
+  .recipeCard {
+    border-radius: 1rem;
+    height: 200px;
+    width: 200px;
+    margin: 0.6rem 0.4rem;
+  }
+
+  .card_title {
+    font-size: 14px;
+  }
+
+  .card_text {
+    font-size: 13px;
+  }
+
+  .imageContainer img {
+    max-width: 130px;
+    border-radius: 50%;
+  }
+}
+
+@media only screen and (max-width: 532px) {
+  .recipeCard {
+    border-radius: 1rem;
+    height: 150px;
+    width: 150px;
+    margin: 0.6rem 0.4rem;
+  }
+
+  .card_title {
+    font-size: 11px;
+  }
+
+  .card_text {
+    font-size: 10px;
+  }
+
+  .imageContainer img {
+    max-width: 100px;
+  }
+}
+
+@media only screen and (max-width: 406px) {
+  .recipeCard {
+    border-radius: 1rem;
+    height: 130px;
+    width: 100px;
+    margin: 0.6rem 0.4rem;
+  }
+
+  .card_title {
+    font-size: 10px;
+    word-break: keep-all;
+  }
+
+  .card_text {
+    display: none;
+  }
+
+  .imageContainer img {
+    max-width: 100px;
+    border-radius: 1rem;
+  }
+
+  .card_middle {
+    height: 30%;
+  }
+
+  .card_bottom {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 282px) {
+  .recipeCard {
+    border-radius: 1rem;
+    height: 200px;
+    width: 200px;
+    margin: 0.6rem 0.4rem;
+  }
+
+  .card_title {
+    font-size: 15px;
+    word-break: keep-all;
+  }
+
+  .card_text {
+    display: block;
+    font-size: 13px;
+  }
+
+  .imageContainer img {
+    max-width: 140px;
+    border-radius: 50%;
+  }
+
+  .card_middle {
+    height: 20%;
+  }
+
+  .card_bottom {
+    display: block;
+    height: 10%;
+  }
+}
 </style>
